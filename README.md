@@ -93,28 +93,27 @@ docker logs --help
 docker logs [parametro] [id container]
 ~~~~
 
---docker ports
+#### Inicializando container e definindo portas no docker
+~~~~CMD
 docker run -d -p 3000:3000 --name teste app:v1.0
-~~~~CMD
-docker image tag app:latest app:v1.0.1
 ~~~~
 
---executando comandos docker
+#### Habilitando terminal para execução de comandos docker
+~~~~CMD
 docker exec teste ls
-~~~~CMD
-docker image tag app:latest app:v1.0.1
 ~~~~
 
---iniciando
+#### Iniciando um container Docker
+~~~~CMD
 docker start teste
-~~~~CMD
-docker image tag app:latest app:v1.0.1
 ~~~~
 
---pausando um container 
+#### Pausando um container 
+~~~~CMD
 docker stop teste
-~~~~CMD
-docker image tag app:latest app:v1.0.1
 ~~~~
 
+#### Deletando um container
+~~~~CMD
 --docker rm -f teste
+~~~~
